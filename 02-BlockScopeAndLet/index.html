@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Let-Examples </title>
+<script>
+   
+//------------------------------------let Examples----------------------------//
+    //-----------------Examples 01---------------------//
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;')
+    console.log('%c ES6 "let" allows block scope', 'color: green; font-weight: bold;');
+    console.log('%c if we try to access local variable out of the scope{} it will show error', 'color: green; font-weight: bold;');
+    function Myfunc1()
+    {  
+             
+        if(true)
+        {
+            let myName='saqib';
+            
+        }     
+        console.log(myName);
+    }
+
+    console.log("\n");
+    console.log(Myfunc1.toString());
+    console.log('%c output Myfunc1(): please uncomment Mufunc()1 in code to see output,which will be error  because local varible using let is unaccessible, out of the scope. Which is good and valid programming behavior', 'color: green; font-weight: bold;');
+    //Myfunc1();
+
+
+//-----------------Examples 02---------------------//
+    console.log('%c *****Example-2*****', 'color: green; font-weight: bold;')    
+    console.log('%c Hurray! we can have separate local and global scope easily by using let ', 'color: green; font-weight: bold;');
+    function Myfunc2()
+    {  
+       let myName='ali';     
+        if(true)
+        {
+            let myName='saqib';
+            console.log('output Local :'+myName);
+            
+        }     
+        console.log('output Global :'+ myName);
+    }
+
+    console.log("\n");
+    console.log(Myfunc2.toString());    
+    Myfunc2();
+
+
+    
+   
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

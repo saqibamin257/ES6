@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>const-Examples </title>
+<script>
+   
+//------------------------------------const Examples----------------------------//
+    //----------------- Examples 01  ---------------------//
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;');
+    
+    function Myfunc1()
+    {   const myName='saqib';     
+        console.log(myName);
+    }
+
+    console.log("\n");
+    console.log(Myfunc1.toString());
+    console.log('%c output Myfunc1():','color: green; font-weight: bold;');
+    Myfunc1();
+
+
+//-----------------Examples 02---------------------//
+    console.log('%c \n *****Example-2*****', 'color: green; font-weight: bold;')    
+    console.log('%c We can not change const values ', 'color: green; font-weight: bold;');
+    function Myfunc2()
+    {   const myName='saqib';
+        myName='ali';
+        console.log(myName);
+    }
+
+    console.log("\n");
+    console.log(Myfunc2.toString());
+    console.log('%c output Myfunc2(): will be error, please uncomment Myfunc2() in code to see result','color: green; font-weight: bold;');
+    //Myfunc2();
+//-----------------Examples 03---------------------//
+    console.log('%c\n *****Example-3*****', 'color: green; font-weight: bold;')    
+    console.log('%c Array and const  ', 'color: green; font-weight: bold;');
+    console.log('%c we can change array because array and const both are reference type   ', 'color: green; font-weight: bold;');
+    
+    function Myfunc3()
+    {   const car=['Honda','Mercedes','Toyota'];
+        console.log(car);
+        car.push('Ferrari');        
+        console.log(car);
+    }
+
+    console.log("\n");
+    console.log(Myfunc3.toString());
+    console.log('%c output Myfunc3():','color: green; font-weight: bold;');
+    Myfunc3();
+
+//-----------------Examples 04---------------------//
+console.log('%c\n *****Example-4*****', 'color: green; font-weight: bold;')    
+    console.log('%c Object and const  ', 'color: green; font-weight: bold;');
+    console.log('%c we can change objects because objects and const both are reference type   ', 'color: green; font-weight: bold;');
+    
+    function Myfunc4()
+    {   
+        const obj={
+        car:'Honda'        
+        };
+      
+        console.log(obj.car);
+        obj.car='Ferrari';        
+        console.log(obj.car);        
+    }
+
+    console.log("\n");
+    console.log(Myfunc4.toString());
+    console.log('%c output Myfunc4():','color: green; font-weight: bold;');
+    Myfunc4();
+
+    
+   
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

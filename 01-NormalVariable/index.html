@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Variables</title>
+<script>
+    //-----------------Normal variable var Examples---------------------//
+    //-----------------Examples 01---------------------//
+    console.log('%c -------Please use Browser console for Results-------', 'color: green; font-weight: bold;');
+    console.log('%c -------I Used Function name.tostring() to show function code in console and %c for colorful text in console------', 'color: green; font-weight: bold;');
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;')
+    console.log('%c In Old Varible Behavior there was no Block Scope, as we can show variable name which is declared inside of if block, but it is accessible outside of it.', 'color: green; font-weight: bold;');
+    
+    function fn1()
+    {        
+        if(true)
+        {
+            var name='saqib';                    
+        }     
+        console.log(name);
+    }
+
+    console.log("\n");
+    console.log(fn1.toString());
+    console.log('%coutput:', 'color: green; font-weight: bold;');
+    fn1();
+
+//-----------------Examples 02---------------------//
+
+    console.log('%c *****Example-2*****', 'color: green; font-weight: bold;')
+    console.log('%c Variable overwrite old value to new one and without any care of global or local', 'color: green; font-weight: bold;');
+    
+    function fn2()
+    {  
+        var name='ali';       
+        if(true)
+        {
+            var name='saqib';
+            console.log(name);                    
+        }     
+        console.log(name);
+    }
+
+    console.log("\n");
+    console.log(fn2.toString());
+    console.log('%c output:', 'color: green; font-weight: bold;');
+    fn2();
+
+   
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

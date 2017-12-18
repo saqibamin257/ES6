@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fat-Arrow</title>
+    <script>
+        //----------------- Examples 01  ---------------------//
+        console.log('%c *****Example-1*****', 'color: green; font-weight: bold;');
+        console.log('%c  Normal function ', 'color: green; font-weight: bold;');
+        function func1()
+         {
+            console.log('saqib');
+         }
+        console.log("\n");
+        console.log(func1.toString());
+        console.log('%c output func1:', 'color: green; font-weight: bold;');
+        func1();
+
+
+
+
+        //----------------- Examples 02  ---------------------//
+        console.log('%c \n *****Example-2*****', 'color: green; font-weight: bold;');
+        console.log('%c  Fat Arrow function', 'color: green; font-weight: bold;');
+        var func2 = () =>
+         {
+            console.log('saqib');
+         }
+        console.log("\n");
+        console.log(func2.toString());
+        console.log('%c Syntax explanation () is for arguments , => is separator and {} is function body:', 'color: green; font-weight: bold;');
+        console.log('%c output func2:', 'color: green; font-weight: bold;');
+        func2();
+
+
+        //----------------- Examples 03  ---------------------//
+        console.log('%c \n *****Example-3*****', 'color: green; font-weight: bold;');
+        console.log('%c  Remove {} for single line of code   ', 'color: green; font-weight: bold;');
+        var func3 = () => console.log('saqib');
+         
+        console.log("\n");
+        console.log(func3.toString());        
+        console.log('%c output func3:', 'color: green; font-weight: bold;');
+        func3();
+
+
+        //----------------- Examples 04  ---------------------//
+        console.log('%c \n *****Example-4*****', 'color: green; font-weight: bold;');
+        console.log('%c  Much Shorter Fat Arrow function  ', 'color: green; font-weight: bold;');
+        console.log('%c  just type text without any return keyword as we are returning just one line  ', 'color: green; font-weight: bold;');
+        var func4 = () => 'saqib';
+         
+        console.log("\n");
+        console.log(func4.toString());        
+        console.log('%c output func4:', 'color: green; font-weight: bold;');
+        console.log(func4());
+
+
+        //----------------- Examples 05  ---------------------//
+        console.log('%c \n *****Example-5*****', 'color: green; font-weight: bold;');
+        console.log('%c  More than one line of code in fn body  ', 'color: green; font-weight: bold;');
+        console.log('%c  Remember we need to type () empty bracket for no arguments  ', 'color: green; font-weight: bold;');
+        var func5 = () => {
+            let a=3;
+            let b=4;
+            return a+b;
+        };
+         
+        console.log("\n");
+        console.log(func5.toString());        
+        console.log('%c output func5:', 'color: green; font-weight: bold;');
+        console.log(func5());
+
+
+        //----------------- Examples 06  ---------------------//
+        console.log('%c \n *****Example-6*****', 'color: green; font-weight: bold;');
+        console.log('%c  Passing 2 Arguments ', 'color: green; font-weight: bold;');
+        
+        var func6 = (a,b) => {            
+            return a+b;
+        };
+         
+        console.log("\n");
+        console.log(func6.toString());        
+        console.log('%c output func6(4,67):', 'color: green; font-weight: bold;');
+        console.log(func6(4,67));
+
+
+         //----------------- Examples 07  ---------------------//
+         console.log('%c \n *****Example-7*****', 'color: green; font-weight: bold;');
+         console.log('%c Shorter code Passing 2 Arguments and having only single line in fn body ', 'color: green; font-weight: bold;');
+        
+        var func7 = (a,b) => a+b;             
+            
+    
+         
+        console.log("\n");
+        console.log(func7.toString());        
+        console.log('%c output func7(4,10):', 'color: green; font-weight: bold;');
+        console.log(func7(4,10));
+
+
+         //----------------- Examples 08  ---------------------//
+         console.log('%c \n *****Example-8*****', 'color: green; font-weight: bold;');
+         console.log('%c Passing 1 Arguments  ', 'color: green; font-weight: bold;');
+        
+        var func8 = (a) => a+8;             
+            
+    
+         
+        console.log("\n");
+        console.log(func8.toString());        
+        console.log('%c output func8(4):', 'color: green; font-weight: bold;');
+        console.log(func8(4));
+
+
+        //----------------- Examples 09  ---------------------//
+        console.log('%c \n *****Example-9*****', 'color: green; font-weight: bold;');
+        console.log('%c shorter code Passing 1 Arguments remove () for single argument  ', 'color: green; font-weight: bold;');
+        
+        var func9 = a => a+8;
+         
+        console.log("\n");
+        console.log(func9.toString());        
+        console.log('%c output func9(10):', 'color: green; font-weight: bold;');
+        console.log(func9(10));
+
+
+        //----------------- Examples 10  ---------------------//
+        console.log('%c \n *****Example-10*****', 'color: green; font-weight: bold;');
+        console.log('%c ignored argument example,if we pass 2 arguments and function have 1 argument ,2nd argument will be ignored ', 'color: green; font-weight: bold;');
+        
+        var func10 = a => a+8;
+         
+        console.log("\n");
+        console.log(func10.toString());        
+        console.log('%c output func10(2,5):', 'color: green; font-weight: bold;');
+        console.log(func10(2,5));
+
+
+        //----------------- Examples 11  ---------------------//
+        console.log('%c \n *****Example-11*****', 'color: green; font-weight: bold;');
+        console.log('%c Set TimeOut ', 'color: green; font-weight: bold;');
+        
+        var func11 = setTimeout( () => console.log('Hello') ,1000);
+         
+        console.log("\n");
+        console.log(func11.toString());        
+        console.log('%c output func11():', 'color: green; font-weight: bold;');
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

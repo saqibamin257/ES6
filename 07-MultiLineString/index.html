@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>MultiLineString</title>
+<script>
+    //---------------------------------Example-1-------------------------------------//
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;');
+    console.log('%c  MultiLine string using back quote ', 'color: green; font-weight: bold;');        
+    
+    function MyFunc(){
+        console.log(`
+        Hello
+        World,
+        Its winter.`);        
+    }
+    console.log("\n");
+    console.log(MyFunc.toString());
+    console.log('%c output MyFunc():', 'color: green; font-weight: bold;');
+    MyFunc();
+
+
+//---------------------------------Example-2-------------------------------------//
+
+    console.log('%c *****Example-2*****', 'color: green; font-weight: bold;');
+    console.log('%c  Use variable value by $ ', 'color: green; font-weight: bold;');
+    function MyFunc1(){
+        let name='Saqib';        
+        console.log(`Hello i am ${name +'!'}`);        
+    }
+    console.log("\n");
+    console.log(MyFunc1.toString());
+    console.log('%c output MyFunc1():', 'color: green; font-weight: bold;');
+    MyFunc1();
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Rest Operator</title>
+</head>
+<script>
+    //---------------------------------Example-1-------------------------------------//
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;');
+    console.log('%c  Normal function with array ', 'color: green; font-weight: bold;');
+
+    let numbers=[22,33,44];
+    function sumUp(toAdd){
+        console.log(toAdd);
+        let result=0;
+        for(let i=0; i<toAdd.length; i++){
+            result += toAdd[i];
+        }
+        return result;
+    }
+    console.log("\n");
+    console.log(sumUp.toString());
+    console.log('%c output sumUp(numbers):', 'color: green; font-weight: bold;');
+    console.log(sumUp(numbers));
+
+//---------------------------------Example-2-------------------------------------//
+    
+    console.log('%c *****Example-2*****', 'color: green; font-weight: bold;');
+    console.log('%c  Pass any number of arguments and use ... as rest operator, it will convert list od number into an array of numbers ', 'color: green; font-weight: bold;');    
+    function sumUp1(...toAdd){
+        console.log(toAdd);
+        let result=0;
+        for(let i=0; i<toAdd.length; i++){
+            result += toAdd[i];
+        }
+        return result;
+    }
+    console.log("\n");
+    console.log(sumUp1.toString());
+    console.log('%c output sumUp1(20,30,40):', 'color: green; font-weight: bold;');
+    console.log(sumUp1(20,30,40));
+
+
+//---------------------------------Example-3-------------------------------------//
+    
+    
+    console.log('%c *****Example-3*****', 'color: green; font-weight: bold;');
+    console.log('%c  Rest and Spread operator are same in writing, Rest Converts list to Array and Sread converts Array into List ', 'color: green; font-weight: bold;');        
+    console.log('%c  Spread operator splits an array into list of values ', 'color: green; font-weight: bold;');        
+    function MyFunc(number){
+        console.log(...number);
+        console.log('Max='+Math.max(...number));        
+    }
+    console.log("\n");
+    console.log(MyFunc.toString());
+    console.log('%c output MyFunc():', 'color: green; font-weight: bold;');
+    
+    
+    let numberArray=[1,2,3,5,29,18];
+    console.log(MyFunc(numberArray));
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DeStructring</title>
+    <script>
+    //---------------------------------Example-1-------------------------------------//
+    
+    console.log('%c *****Example-1*****', 'color: green; font-weight: bold;');
+    console.log('%c  De Structure Array ', 'color: green; font-weight: bold;');
+    function MyFunc1(){
+        let number=[1,2,3];
+        let[a,b]=number;        
+        console.log(`First Value= ${a}`);
+        console.log(`Second Value= ${b}`);
+        console.log(`Original Array= ${number}`);  
+    }
+    console.log("\n");
+    console.log(MyFunc1.toString());
+    console.log('%c output MyFunc1():', 'color: green; font-weight: bold;');
+    MyFunc1();
+
+//---------------------------------Example-2-------------------------------------//
+
+    console.log('%c *****Example-2*****', 'color: green; font-weight: bold;');
+    console.log('%c  De Structure Array ', 'color: green; font-weight: bold;');
+    function MyFunc2(){
+        let number=[1,2,3];
+        let[a,...b]=number;                
+        console.log(`First Value= ${a}`);
+        console.log(`b contains remaining array Value= ${b}`);
+        console.log(`Original Array= ${number}`);  
+    }
+    console.log("\n");
+    console.log(MyFunc2.toString());
+    console.log('%c output MyFunc2():', 'color: green; font-weight: bold;');
+    MyFunc2();
+
+
+
+    //---------------------------------Example-3-------------------------------------//
+
+    console.log('%c *****Example-3****', 'color: green; font-weight: bold;');
+    console.log('%c  Mix Examples ', 'color: green; font-weight: bold;');
+    function MyFunc3(){
+        let number=[1,2,3];
+        let[a,b,c,d]=number;                
+        console.log(`First Value= ${a}`);
+        console.log(`d contains remaining array Value= ${d}`);
+        console.log(`Original Array= ${number}`);  
+        console.log('%c *****Default value*****', 'color: green; font-weight: bold;');
+        let number1=[1,2,3];
+        let[e,f,g,h='Default']=number1;                
+        console.log(`First Value= ${e}`);
+        console.log(`Second Value= ${f}`);
+        console.log(`Third Value= ${g}`);
+        console.log(`h contains default value= ${h}`);
+        console.log(`Original Array= ${number1}`);  
+    }
+
+
+
+    console.log("\n");
+    console.log(MyFunc3.toString());
+    console.log('%c output MyFunc3():', 'color: green; font-weight: bold;');
+    MyFunc3();
+
+
+//---------------------------------Example-4-------------------------------------//
+    console.log('%c *****Example-4****', 'color: green; font-weight: bold;');
+    console.log('%c  De Structring objects ', 'color: green; font-weight: bold;');
+   function MyFunc4()
+    {
+        let obj={
+            name:'saqib',
+            age:28
+        };
+        let {name,age}=obj;
+        console.log(name,age);
+    }
+    console.log("\n");
+    console.log(MyFunc4.toString());
+    console.log('%c output MyFunc4():', 'color: green; font-weight: bold;');    
+    MyFunc4();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
